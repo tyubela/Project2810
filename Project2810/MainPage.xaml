@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project2810.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Imie"/>
+            <Entry x:Name="imieEntry"/>
+            <Label Text="Ilosc"/>
+            <Entry x:Name="iloscEntry"/>
+            <Label Text="Wybierz napój"/>
+            <RadioButton x:Name="kawaradio" Content="kawa" GroupName="sos"/>
+
+            <RadioButton x:Name="herbataradio" Content="herbata" GroupName="sos"/>
+
+            <RadioButton x:Name="czekoladaradio" Content="Gorąca czekolada" GroupName="sos"/>
+
+            <Label Text="Wielkość napoju"/>
+            <RadioButton x:Name="malyradio" Content="mały" GroupName="sos1"/>
+
+            <RadioButton x:Name="sredniradio" Content="średni" GroupName="sos1"/>
+
+            <RadioButton x:Name="duzyradio" Content="duży" GroupName="sos1"/>
+
+            <Label Text="Wybierz dodatek"/>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="mlekocheck"/>
+                <Label Text="Mleko roślinne - 2zł"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="syropcheck"/>
+                <Label Text="Syrop smakowy - 2.50zł"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="espressocheck"/>
+                <Label Text="Dodatkowa porcja espresso - 3zł"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox x:Name="smietanacheck"/>
+                <Label Text="Bita śmietanka - 2zł"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="20">
+                <Button Text="Oblicz cenę" x:Name="obliczbtn" Clicked="Button_Clicked"/>
+                <Button Text="Wyczyść Formularz" x:Name="wyczyscbtn" Clicked="Button_Clicked_1"/>
+            </HorizontalStackLayout>
+            <Label x:Name="wypisywanie"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
